@@ -316,3 +316,5 @@ func (t *TxService) TransactionFee(ctx context.Context, txHash common.Hash) (*bi
 	}
 	return trx.Cost(), nil
 }
+
+// TODO: modify such that a transaction object is created and sent to FE, which signs the tx and sends it back, which is then sent to blockchain
